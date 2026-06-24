@@ -1,0 +1,562 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CRAVINGO — Healthy Cravings, Smarter Choices</title>
+  <meta name="description" content="CRAVINGO — premium healthy makhana and protein snacks. Snack smart, live healthy.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,500;0,9..144,600;0,9..144,700;0,9..144,900;1,9..144,500&family=Outfit:wght@300;400;500;600;700;800&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+  <link rel="stylesheet" href="Cravingo.css">
+</head>
+
+<body>
+
+  <!-- ============ LOADING SCREEN ============ -->
+  <div id="loader" class="loader">
+    <div class="loader-pop">
+      <span class="pop pop1"></span>
+      <span class="pop pop2"></span>
+      <span class="pop pop3"></span>
+    </div>
+    <p class="loader-text">CRAVINGO</p>
+  </div>
+
+  <!-- ============ TOAST ============ -->
+  <div id="toast" class="toast"></div>
+
+  <!-- ============ NAVBAR ============ -->
+  <header class="navbar" id="navbar">
+    <div class="nav-inner">
+      <a href="#home" class="logo">
+        <span class="logo-pop"></span> CRAVINGO
+      </a>
+
+      <nav class="nav-links" id="navLinks">
+        <a href="#home">Home</a>
+        <a href="#about">About</a>
+        <a href="#categories">Categories</a>
+        <a href="#products">Shop</a>
+        <a href="#offers">Offers</a>
+        <a href="#testimonials">Reviews</a>
+        <a href="#contact">Contact</a>
+      </nav>
+
+      <div class="nav-actions">
+        <div class="search-wrap">
+          <button id="searchToggle" class="icon-btn" aria-label="Search products"><i
+              class="fa-solid fa-magnifying-glass"></i></button>
+          <input type="text" id="searchInput" class="search-input" placeholder="Search Masala Makhana, Protein Bar...">
+        </div>
+        <button id="wishlistBtn" class="icon-btn" aria-label="Wishlist">
+          <i class="fa-regular fa-heart"></i>
+          <span class="badge" id="wishlistCount">0</span>
+        </button>
+        <button id="cartBtn" class="icon-btn" aria-label="Cart">
+          <i class="fa-solid fa-basket-shopping"></i>
+          <span class="badge" id="cartCount">0</span>
+        </button>
+        <button id="themeToggle" class="icon-btn" aria-label="Toggle dark mode"><i
+            class="fa-solid fa-moon"></i></button>
+        <button id="accountBtn" class="icon-btn" aria-label="Account"><i class="fa-regular fa-user"></i></button>
+        <button id="menuToggle" class="icon-btn mobile-only" aria-label="Menu"><i class="fa-solid fa-bars"></i></button>
+      </div>
+    </div>
+  </header>
+
+  <!-- ============ SECTION 1: HERO ============ -->
+  <section class="hero" id="home">
+    <div class="hero-bg">
+      <span class="float-pop fp1"></span>
+      <span class="float-pop fp2"></span>
+      <span class="float-pop fp3"></span>
+      <span class="float-pop fp4"></span>
+      <span class="float-pop fp5"></span>
+    </div>
+    <div class="hero-inner">
+      <div class="hero-copy" data-aos="fade-up">
+        <span class="eyebrow">Puffed. Roasted. Real.</span>
+        <h1>Snack Smart.<br><em>Live Healthy.</em></h1>
+        <p class="hero-sub">Discover delicious and nutritious snacks crafted for modern lifestyles. Enjoy guilt-free
+          munching with every bite.</p>
+        <div class="interest-box">
+          <h3>🚀 Be First To Try Cravingo</h3>
+          <p>Get notified when our healthy snacks launch.</p>
+
+          <div class="interest-form">
+            <input type="email" id="interestEmail" placeholder="Enter your email" required>
+
+            <button id="interestBtn">
+              I'm Interested
+            </button>
+          </div>
+
+          <div id="interestMessage"></div>
+        </div>
+        <div class="hero-btns">
+          <a href="#products" class="btn btn-primary">Shop Now <i class="fa-solid fa-arrow-right"></i></a>
+          <a href="#categories" class="btn btn-ghost">Explore Products</a>
+        </div>
+        <div class="hero-stats">
+          <div class="stat"><span class="counter" data-target="50000">0</span><small>Happy Snackers</small></div>
+          <div class="stat"><span class="counter" data-target="12">0</span><small>Flavours</small></div>
+          <div class="stat"><span class="counter" data-target="0" data-decimal="4.8">0</span><small>Avg. Rating</small>
+          </div>
+        </div>
+      </div>
+      <div class="hero-visual" data-aos="zoom-in">
+        <div class="hero-bowl-card glass">
+          <img src="Image1.jpeg" alt="Bowl of roasted makhana snacks">
+        </div>
+        <div class="hero-float-card glass card-protein">
+          <i class="fa-solid fa-bolt"></i>
+          <div><strong>High Protein</strong><small>NutriBite Bar</small></div>
+        </div>
+        <div class="hero-float-card glass card-cal">
+          <i class="fa-solid fa-leaf"></i>
+          <div><strong>Low Calorie</strong><small>Guilt-free snacking</small></div>
+        </div>
+      </div>
+    </div>
+    <div class="scroll-cue"><span></span>Scroll</div>
+  </section>
+
+  <!-- ============ SECTION 2: ABOUT ============ -->
+  <section class="about" id="about">
+    <div class="container">
+      <span class="section-eyebrow center">Our Promise</span>
+      <h2 class="section-title center" data-aos="fade-up">Why Choose <em>Cravingo?</em></h2>
+      <p class="section-text center" data-aos="fade-up">Cravingo is dedicated to creating healthy, tasty, and nutritious
+        snacks that fit modern lifestyles. We believe healthy eating should never be boring — every product is carefully
+        crafted using premium ingredients for the perfect balance of taste and nutrition.</p>
+
+      <div class="features-grid">
+        <div class="feature-card glass" data-aos="fade-up" data-aos-delay="0">
+          <div class="feature-icon"><i class="fa-solid fa-dumbbell"></i></div>
+          <h4>High Protein</h4>
+          <p>Fuel your day with snacks that pack a protein punch.</p>
+        </div>
+        <div class="feature-card glass" data-aos="fade-up" data-aos-delay="80">
+          <div class="feature-icon"><i class="fa-solid fa-fire-flame-curved"></i></div>
+          <h4>Low Calories</h4>
+          <p>Crunch guilt-free without compromising on flavour.</p>
+        </div>
+        <div class="feature-card glass" data-aos="fade-up" data-aos-delay="160">
+          <div class="feature-icon"><i class="fa-solid fa-seedling"></i></div>
+          <h4>Natural Ingredients</h4>
+          <p>Sourced from nature, roasted to perfection.</p>
+        </div>
+        <div class="feature-card glass" data-aos="fade-up" data-aos-delay="240">
+          <div class="feature-icon"><i class="fa-solid fa-flask"></i></div>
+          <h4>No Preservatives</h4>
+          <p>Zero artificial preservatives, ever — just real food.</p>
+        </div>
+        <div class="feature-card glass" data-aos="fade-up" data-aos-delay="320">
+          <div class="feature-icon"><i class="fa-solid fa-heart-pulse"></i></div>
+          <h4>Lifestyle Support</h4>
+          <p>Designed to support active, balanced everyday living.</p>
+        </div>
+        <div class="feature-card glass" data-aos="fade-up" data-aos-delay="400">
+          <div class="feature-icon"><i class="fa-solid fa-star"></i></div>
+          <h4>Great Taste</h4>
+          <p>Flavour-first recipes that keep you coming back.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ SECTION 3: CATEGORIES ============ -->
+  <section class="categories" id="categories">
+    <div class="container">
+      <span class="section-eyebrow center">Shop By Category</span>
+      <h2 class="section-title center" data-aos="fade-up">Find Your <em>Perfect Snack</em></h2>
+
+      <div class="cat-grid">
+        <div class="cat-card" data-aos="fade-up">
+          <img src="Image1.jpeg" alt="Healthy Makhana category">
+          <div class="cat-overlay">
+            <h4>Healthy Makhana</h4>
+            <p>Masala &amp; Pudina Mint varieties</p>
+            <button class="btn btn-small explore-cat" data-filter="makhana">Explore</button>
+          </div>
+        </div>
+        <div class="cat-card" data-aos="fade-up" data-aos-delay="80">
+          <img src="Image2.jpeg" alt="Energy and protein category">
+          <div class="cat-overlay">
+            <h4>Energy &amp; Protein</h4>
+            <p>NutriBite Protein Bar</p>
+            <button class="btn btn-small explore-cat" data-filter="protein">Explore</button>
+          </div>
+        </div>
+        <div class="cat-card" data-aos="fade-up" data-aos-delay="160">
+          <img src="Image9.jpeg" alt="Weight management snacks">
+          <div class="cat-overlay">
+            <h4>Weight Management</h4>
+            <p>Low-cal, high-fibre picks</p>
+            <button class="btn btn-small explore-cat" data-filter="weight">Explore</button>
+          </div>
+        </div>
+        <div class="cat-card" data-aos="fade-up" data-aos-delay="240">
+          <img src="Image4.jpeg" alt="Fitness snacks">
+          <div class="cat-overlay">
+            <h4>Fitness Snacks</h4>
+            <p>Pre/post workout fuel</p>
+            <button class="btn btn-small explore-cat" data-filter="fitness">Explore</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ SECTION 4: PRODUCTS ============ -->
+  <section class="products" id="products">
+    <div class="container">
+      <span class="section-eyebrow center">Best Sellers</span>
+      <h2 class="section-title center" data-aos="fade-up">Our <em>Signature Snacks</em></h2>
+
+      <div class="filter-bar" data-aos="fade-up">
+        <button class="filter-btn active" data-filter="all">All</button>
+        <button class="filter-btn" data-filter="makhana">Snacks</button>
+        <button class="filter-btn" data-filter="protein">Protein</button>
+        <button class="filter-btn" data-filter="weight">Weight Mgmt</button>
+
+      </div>
+
+      <div class="products-grid" id="productsGrid"><!-- injected by JS --></div>
+    </div>
+  </section>
+
+  <!-- ============ SECTION 5: REWARDS / ACCOUNT ============ -->
+  <section class="rewards" id="rewards">
+    <div class="container rewards-inner">
+      <div class="rewards-copy" data-aos="fade-right">
+        <span class="section-eyebrow">Cravingo Rewards</span>
+        <h2 class="section-title">Join <em>Cravingo Rewards</em></h2>
+        <p class="section-text-left">Create your free account, order your favourite snacks, and unlock <strong>15%
+            off</strong> automatically on every 6th order.</p>
+
+        <div id="loggedOutView">
+          <div class="auth-tabs">
+            <button class="auth-tab active" data-tab="login">Login</button>
+            <button class="auth-tab" data-tab="register">Create Account</button>
+          </div>
+
+          <form id="loginForm" class="auth-form active">
+            <input type="email" id="loginEmail" placeholder="Email address" required>
+            <input type="password" id="loginPassword" placeholder="Password" required>
+            <button type="submit" class="btn btn-primary full">Login</button>
+          </form>
+
+          <form id="registerForm" class="auth-form">
+            <input type="text" id="regName" placeholder="Full name" required>
+            <input type="email" id="regEmail" placeholder="Email address" required>
+            <input type="password" id="regPassword" placeholder="Password (min 6 chars)" required minlength="6">
+            <button type="submit" class="btn btn-primary full">Create Account</button>
+          </form>
+        </div>
+
+        <div id="loggedInView" class="hidden">
+          <div class="account-card glass">
+            <div class="account-head">
+              <div class="avatar" id="avatarInitial">C</div>
+              <div>
+                <h4 id="welcomeName">Welcome back!</h4>
+                <small id="welcomeEmail"></small>
+              </div>
+              <button id="logoutBtn" class="btn btn-ghost btn-small">Logout</button>
+            </div>
+            <div class="reward-progress">
+              <div class="reward-label">
+                <span>Orders Completed</span>
+                <strong id="orderProgressText">0 / 5</strong>
+              </div>
+              <div class="progress-track">
+                <div class="progress-fill" id="orderProgressFill"></div>
+              </div>
+              <p class="reward-note" id="rewardNote">Place 5 orders to unlock a 15% reward discount on your next order!
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="rewards-visual" data-aos="fade-left">
+        <img src="https://images.unsplash.com/photo-1606312619070-d48b4c652a52?w=600&q=80"
+          alt="Cravingo rewards illustration">
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ SECTION 6: OFFERS ============ -->
+  <section class="offers" id="offers">
+    <div class="container">
+      <span class="section-eyebrow center">Limited Time</span>
+      <h2 class="section-title center" data-aos="fade-up">Special <em>Offers</em></h2>
+
+      <div class="offers-grid">
+        <div class="offer-card glass" data-aos="fade-up">
+          <div class="offer-emoji">🔥</div>
+          <h4>Buy 2 Get 1 Free</h4>
+          <p>On all makhana packs, mix &amp; match flavours.</p>
+        </div>
+        <div class="offer-card glass" data-aos="fade-up" data-aos-delay="80">
+          <div class="offer-emoji">🎁</div>
+          <h4>First Order: 10% Off</h4>
+          <p>New to Cravingo? Get 10% off your first order.</p>
+        </div>
+        <div class="offer-card glass" data-aos="fade-up" data-aos-delay="160">
+          <div class="offer-emoji">⭐</div>
+          <h4>Loyalty Rewards</h4>
+          <p>Earn 15% off automatically every 6th order.</p>
+        </div>
+        <div class="offer-card glass" data-aos="fade-up" data-aos-delay="240">
+          <div class="offer-emoji">🚚</div>
+          <h4>Free Delivery ₹499+</h4>
+          <p>Free shipping on orders above ₹499.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ SECTION 7: TESTIMONIALS ============ -->
+  <section class="testimonials" id="testimonials">
+    <div class="container">
+      <span class="section-eyebrow center">Loved By Many</span>
+      <h2 class="section-title center" data-aos="fade-up">Customer <em>Stories</em></h2>
+
+      <div class="testimonial-slider">
+      <div class="testimonial-track" id="testimonialTrack">
+        <div class="testimonial-card glass">
+          <img src="Angel Mam.jpeg" alt="Angel Rani">
+          <div class="t-rating">★★★★★</div>
+          <p>"Masala Makhana is now my go-to evening snack. Crunchy, flavourful, and I don't feel guilty about it!"</p>
+          <h5>Angel Rani</h5>
+        </div>
+        <div class="testimonial-card glass">
+          <img src="Om Sir.jpeg" alt="Om Prakash">
+          <div class="t-rating">★★★★★</div>
+          <p>"The NutriBite bar is perfect post-gym. Great taste and keeps me full for hours."</p>
+          <h5>Om Prakash</h5>
+        </div>
+        <div class="testimonial-card glass">
+          <img src="Anubha mam.jpeg" alt="Anubha Singh">
+          <div class="t-rating">★★★★☆</div>
+          <p>"Pudina Mint Makhana is so refreshing. Love that the rewards program gives me real discounts."</p>
+          <h5>Anubha Singh</h5>
+        </div>
+        <div class="testimonial-card glass">
+          <img src="Pro VC.jpeg" alt="Karan Verma">
+          <div class="t-rating">★★★★★</div>
+          <p>"Finally a snack brand that's actually healthy AND tasty. Ordering again this week."</p>
+          <h5>Dr.Chinnaiyan Ramasubramanian</h5>
+        </div>
+      </div>
+      <button class="slider-btn prev" id="testPrev"><i class="fa-solid fa-chevron-left"></i></button>
+      <button class="slider-btn next" id="testNext"><i class="fa-solid fa-chevron-right"></i></button>
+    </div>
+    </div>
+  </section>
+
+  <!-- ============ SECTION 8: NUTRITION ============ -->
+  <section class="nutrition" id="nutrition">
+    <div class="container">
+      <span class="section-eyebrow center">Inside Every Pack</span>
+      <h2 class="section-title center" data-aos="fade-up">Nutrition <em>Benefits</em></h2>
+
+      <div class="nutrition-grid">
+        <div class="nutri-circle" data-aos="zoom-in" data-percent="78" data-color="#4F7942">
+          <svg viewBox="0 0 120 120">
+            <circle class="ring-bg" cx="60" cy="60" r="52"></circle>
+            <circle class="ring-fill" cx="60" cy="60" r="52"></circle>
+          </svg>
+          <div class="nutri-label"><strong>78%</strong><span>Protein</span></div>
+        </div>
+        <div class="nutri-circle" data-aos="zoom-in" data-aos-delay="80" data-percent="65" data-color="#E97B3D">
+          <svg viewBox="0 0 120 120">
+            <circle class="ring-bg" cx="60" cy="60" r="52"></circle>
+            <circle class="ring-fill" cx="60" cy="60" r="52"></circle>
+          </svg>
+          <div class="nutri-label"><strong>65%</strong><span>Fibre</span></div>
+        </div>
+        <div class="nutri-circle" data-aos="zoom-in" data-aos-delay="160" data-percent="40" data-color="#D9534F">
+          <svg viewBox="0 0 120 120">
+            <circle class="ring-bg" cx="60" cy="60" r="52"></circle>
+            <circle class="ring-fill" cx="60" cy="60" r="52"></circle>
+          </svg>
+          <div class="nutri-label"><strong>40%</strong><span>Calories (low)</span></div>
+        </div>
+        <div class="nutri-circle" data-aos="zoom-in" data-aos-delay="240" data-percent="88" data-color="#3E8E7E">
+          <svg viewBox="0 0 120 120">
+            <circle class="ring-bg" cx="60" cy="60" r="52"></circle>
+            <circle class="ring-fill" cx="60" cy="60" r="52"></circle>
+          </svg>
+          <div class="nutri-label"><strong>88%</strong><span>Energy</span></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ SECTION 10: NEW ARRIVALS ============ -->
+  <section class="new-arrivals" id="new-arrivals">
+    <div class="container">
+      <span class="section-eyebrow center">Coming Soon</span>
+      <h2 class="section-title center" data-aos="fade-up">New <em>Arrivals</em></h2>
+
+      <div class="arrivals-grid">
+        <div class="arrival-card glass" data-aos="fade-up">
+          <span class="soon-badge">Coming Soon</span>
+          <img src="Image8.jpeg" alt="Chocolate Makhana">
+          <h4>Chocolate Makhana</h4>
+          <p>Cocoa-dusted puffed lotus seeds.</p>
+        </div>
+        <div class="arrival-card glass" data-aos="fade-up" data-aos-delay="160">
+          <span class="soon-badge">Coming Soon</span>
+          <img src="Image7.jpeg" alt="Dry Fruit Bar">
+          <h4>Dry Fruit Bar</h4>
+          <p>Loaded with almonds, dates &amp; cashews.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ NEWSLETTER ============ -->
+  <section class="newsletter">
+    <div class="container newsletter-inner" data-aos="fade-up">
+      <div>
+        <h3>Get 10% off your first order</h3>
+        <p>Subscribe for healthy recipes, launches &amp; exclusive offers.</p>
+      </div>
+      <form id="newsletterForm" class="newsletter-form">
+        <input type="email" placeholder="Enter your email" required>
+        <button type="submit" class="btn btn-primary">Subscribe</button>
+      </form>
+    </div>
+  </section>
+
+  <!-- ============ SECTION 11: CONTACT ============ -->
+  <section class="contact" id="contact">
+    <div class="container contact-inner">
+      <div class="contact-info" data-aos="fade-right">
+        <span class="section-eyebrow">Get In Touch</span>
+        <h2 class="section-title">Contact <em>Us</em></h2>
+        <div class="info-row"><i class="fa-solid fa-phone"></i> +91 8439541026</div>
+        <div class="info-row"><i class="fa-solid fa-envelope"></i> hello@cravingo.in</div>
+        <div class="info-row"><i class="fa-solid fa-location-dot"></i> Cravingo Foods, Haridwar, Uttarakhand, India
+        </div>
+        <div class="socials">
+          <a href="#" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
+          <a href="#" aria-label="Facebook"><i class="fa-brands fa-facebook-f"></i></a>
+          <a href="#" aria-label="Twitter"><i class="fa-brands fa-twitter"></i></a>
+          <a href="#" aria-label="YouTube"><i class="fa-brands fa-youtube"></i></a>
+        </div>
+      </div>
+      <form class="contact-form glass" id="contactForm" data-aos="fade-left">
+        <input type="text" placeholder="Your Name" required>
+        <input type="email" placeholder="Your Email" required>
+        <textarea rows="4" placeholder="Your Message" required></textarea>
+        <button type="submit" class="btn btn-primary full">Send Message</button>
+      </form>
+    </div>
+  </section>
+
+  <!-- ============ FOOTER (SECTION 12) ============ -->
+  <footer class="footer">
+    <div class="container footer-grid">
+      <div>
+        <a href="#home" class="logo footer-logo"><span class="logo-pop"></span> CRAVINGO</a>
+        <p>Healthy Cravings, Smarter Choices.</p>
+      </div>
+      <div>
+        <h5>Quick Links</h5>
+        <a href="#home">Home</a>
+        <a href="#about">About</a>
+        <a href="#products">Shop</a>
+        <a href="#contact">Contact</a>
+      </div>
+      <div>
+        <h5>Categories</h5>
+        <a href="#categories">Healthy Makhana</a>
+        <a href="#categories">Energy &amp; Protein</a>
+        <a href="#categories">Weight Management</a>
+        <a href="#categories">Fitness Snacks</a>
+      </div>
+      <div>
+        <h5>Legal</h5>
+        <a href="#" id="privacyLink">Privacy Policy</a>
+        <a href="#" id="termsLink">Terms &amp; Conditions</a>
+      </div>
+    </div>
+    <div class="footer-bottom">&copy; <span id="year"></span> CRAVINGO. All rights reserved.</div>
+  </footer>
+
+  <!-- ============ SCROLL TO TOP ============ -->
+  <button id="scrollTop" class="scroll-top" aria-label="Scroll to top"><i class="fa-solid fa-chevron-up"></i></button>
+
+  <!-- ============ CART DRAWER ============ -->
+  <div class="drawer-overlay" id="drawerOverlay"></div>
+  <aside class="cart-drawer" id="cartDrawer">
+    <div class="drawer-head">
+      <h3><i class="fa-solid fa-basket-shopping"></i> Your Cart</h3>
+      <button id="closeCart" class="icon-btn"><i class="fa-solid fa-xmark"></i></button>
+    </div>
+    <div class="cart-items" id="cartItems"></div>
+    <div class="cart-summary" id="cartSummary">
+      <div class="summary-row"><span>Subtotal</span><strong id="subtotalVal">₹0</strong></div>
+      <div class="summary-row" id="bulkDiscountRow"><span>Buy 2 Get 1 Free</span><strong
+          id="bulkDiscountVal">-₹0</strong></div>
+      <div class="summary-row" id="rewardDiscountRow"><span>Reward Discount (15%)</span><strong
+          id="rewardDiscountVal">-₹0</strong></div>
+      <div class="summary-row total"><span>Total</span><strong id="totalVal">₹0</strong></div>
+      <button id="checkoutBtn" class="btn btn-primary full">Checkout</button>
+    </div>
+  </aside>
+
+  <!-- ============ WISHLIST DRAWER ============ -->
+  <aside class="cart-drawer" id="wishlistDrawer">
+    <div class="drawer-head">
+      <h3><i class="fa-regular fa-heart"></i> Wishlist</h3>
+      <button id="closeWishlist" class="icon-btn"><i class="fa-solid fa-xmark"></i></button>
+    </div>
+    <div class="cart-items" id="wishlistItems"></div>
+  </aside>
+
+  <!-- ============ QUICK VIEW MODAL ============ -->
+  <div class="modal-overlay" id="quickViewOverlay">
+    <div class="modal quick-view glass" id="quickViewModal">
+      <button class="modal-close" id="closeQuickView"><i class="fa-solid fa-xmark"></i></button>
+      <div id="quickViewContent"></div>
+    </div>
+  </div>
+
+  <!-- ============ CHECKOUT / INVOICE MODAL ============ -->
+  <div class="modal-overlay" id="checkoutOverlay">
+    <div class="modal checkout-modal glass" id="checkoutModal">
+      <button class="modal-close" id="closeCheckout"><i class="fa-solid fa-xmark"></i></button>
+      <h3><i class="fa-solid fa-circle-check"></i> Order Confirmed!</h3>
+      <p>Thank you<span id="checkoutCustomerName"></span>! Your invoice summary is below.</p>
+      <div id="invoiceSummary" class="invoice-box"></div>
+      <div class="checkout-actions">
+        <button id="downloadPdf" class="btn btn-ghost"><i class="fa-solid fa-file-pdf"></i> Download PDF</button>
+        <button id="downloadCsv" class="btn btn-ghost"><i class="fa-solid fa-file-csv"></i> Download CSV</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- ============ TERMS / PRIVACY MODAL ============ -->
+  <div class="modal-overlay" id="infoOverlay">
+    <div class="modal glass" id="infoModal">
+      <button class="modal-close" id="closeInfo"><i class="fa-solid fa-xmark"></i></button>
+      <h3 id="infoTitle"></h3>
+      <div id="infoBody"></div>
+    </div>
+  </div>
+  <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+  <script src="Cravingo.js"></script>
+</body>
+
+</html>
