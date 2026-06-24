@@ -1240,7 +1240,7 @@ if (interestBtn) {
     }
 
     interestBtn.disabled = true;
-    interestBtn.innerText = "Submitting...";
+    interestBtn.innerText = "✅ Thank you! We'll notify you when Cravingo launches";
 
     emailjs.send(
       "service_r7d8o77",
